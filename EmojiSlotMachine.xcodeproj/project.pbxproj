@@ -15,12 +15,12 @@
 		93233EA22482019D00EE7C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93233EA02482019D00EE7C60 /* LaunchScreen.storyboard */; };
 		932382CF2491C99B00A4F43B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 932382CE2491C99B00A4F43B /* README.md */; };
 		932382D12491CBE200A4F43B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 932382D02491CBE200A4F43B /* LICENSE */; };
-		932382D32491CCFB00A4F43B /* 3InARow.png in Resources */ = {isa = PBXBuildFile; fileRef = 932382D22491CCFB00A4F43B /* 3InARow.png */; };
 		932382D52491CCFF00A4F43B /* Winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 932382D42491CCFF00A4F43B /* Winner.png */; };
 		933A7A052482F0B90023AE84 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A7A042482F0B90023AE84 /* SoundManager.swift */; };
 		933A7A082483193C0023AE84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A7A072483193C0023AE84 /* Constants.swift */; };
 		933A7A1124835BC70023AE84 /* Slots.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 933A7A1024835BB90023AE84 /* Slots.m4a */; };
 		933A7A13248360F50023AE84 /* Rattle.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 933A7A12248360F30023AE84 /* Rattle.m4a */; };
+		93F113DE2492C19400435732 /* 3InARow.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F113DD2492C19400435732 /* 3InARow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +34,12 @@
 		93233EA32482019D00EE7C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932382CE2491C99B00A4F43B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		932382D02491CBE200A4F43B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		932382D22491CCFB00A4F43B /* 3InARow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3InARow.png; sourceTree = "<group>"; };
 		932382D42491CCFF00A4F43B /* Winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Winner.png; sourceTree = "<group>"; };
 		933A7A042482F0B90023AE84 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		933A7A072483193C0023AE84 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		933A7A1024835BB90023AE84 /* Slots.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slots.m4a; sourceTree = "<group>"; };
 		933A7A12248360F30023AE84 /* Rattle.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rattle.m4a; sourceTree = "<group>"; };
+		93F113DD2492C19400435732 /* 3InARow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3InARow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		932382CD2491C97800A4F43B /* GitHub-Images */ = {
 			isa = PBXGroup;
 			children = (
-				932382D22491CCFB00A4F43B /* 3InARow.png */,
+				93F113DD2492C19400435732 /* 3InARow.png */,
 				932382D42491CCFF00A4F43B /* Winner.png */,
 			);
 			path = "GitHub-Images";
@@ -198,10 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				932382CF2491C99B00A4F43B /* README.md in Resources */,
-				932382D32491CCFB00A4F43B /* 3InARow.png in Resources */,
 				93233EA22482019D00EE7C60 /* LaunchScreen.storyboard in Resources */,
 				93233E9F2482019D00EE7C60 /* Assets.xcassets in Resources */,
 				932382D12491CBE200A4F43B /* LICENSE in Resources */,
+				93F113DE2492C19400435732 /* 3InARow.png in Resources */,
 				933A7A1124835BC70023AE84 /* Slots.m4a in Resources */,
 				933A7A13248360F50023AE84 /* Rattle.m4a in Resources */,
 				93233E9D2482019C00EE7C60 /* Main.storyboard in Resources */,

@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "dribbble-gradient-love-2.png",
+      "filename" : "LightBG.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,7 +17,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "dribbble-gradient-love-1.png",
+      "filename" : "LightBG-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -33,7 +33,7 @@
       "scale" : "2x"
     },
     {
-      "filename" : "dribbble-gradient-love.png",
+      "filename" : "LightBG-1.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
