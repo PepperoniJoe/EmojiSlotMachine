@@ -19,8 +19,8 @@ class ViewController: UIViewController {
 
     var bounds    = CGRect.zero
     var dataArray = [[Int](), [Int](), [Int]()]
-    var winSound  = AudioPlayerManager()
-    var rattle    = AudioPlayerManager()
+    var winSound  = SoundManager()
+    var rattle    = SoundManager()
 
     
     override func viewDidLoad() {
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     func loadData() {
         for i in 0...2 {
             for _ in 0...100 {
-                dataArray[i].append(Int.random(in: 0...K.count - 1))
+                dataArray[i].append(Int.random(in: 0...K.imageArray.count - 1))
             }
         }
     }
@@ -44,59 +44,43 @@ class ViewController: UIViewController {
     func setupUIAndSound() {
         // SOUND
         winSound.setupPlayer(soundName: K.sound, soundType: SoundType.m4a)
-        winSound.player.volume = 1.0
         rattle.setupPlayer(soundName: K.rattle, soundType: .m4a)
-        rattle.player.volume = 0.1
+        winSound.volume(1.0)
+        rattle.volume(0.1)
         buttonSpin.alpha = 0
         
         // UI
         bounds = buttonSpin.bounds
-        setUIDarkMode()
+        setTrim()
         labelResult.layer.cornerRadius  = 10
         labelResult.layer.masksToBounds = true
         pickerView.layer.cornerRadius   = 10
-        pickerView.layer.masksToBounds  = true
+        buttonSpin.layer.cornerRadius   = 40
     }
     
-    func setUIDarkMode () {
-         let trimColor = UIColor(named: K.foreColor)?.cgColor ?? UIColor.black.cgColor
-         let borderWidth: CGFloat = 2
-         labelResult.layer.borderColor = trimColor
-         labelResult.layer.borderWidth = borderWidth
-         pickerView.layer.borderColor  = trimColor
-         pickerView.layer.borderWidth  = borderWidth
-         buttonSpin.layer.borderColor  = trimColor
-         buttonSpin.layer.borderWidth  = borderWidth
+    func setTrim () {
+        labelResult.layer.borderColor = UIColor.label.cgColor
+        pickerView.layer.borderColor  = UIColor.label.cgColor
+        buttonSpin.layer.borderColor  = UIColor.label.cgColor
+        
+        labelResult.layer.borderWidth = 2
+        pickerView.layer.borderWidth  = 2
+        buttonSpin.layer.borderWidth  = 2
     }
     
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-    
         guard traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle else { return }
-        setUIDarkMode()
+        setTrim()
     }
     
     
     func spinSlots() {
-
-        var index: [Int] = [Int(), Int(), Int()]
-        
-        if winFlag {
-            index[0] = Int.random(in: 3...97)
-            index[1] = dataArray[1].firstIndex(of: dataArray[0][index[0]])!
-            index[2] = dataArray[2].lastIndex(of: dataArray[0][index[0]])!
-         } else {
-            for i in 0...2 {
-                index[i] = Int.random(in: 3...97)
-            }
-        }
-         
         for i in 0...2 {
-            pickerView.selectRow(index[i], inComponent: i, animated: true)
+            pickerView.selectRow(Int.random(in: 3...97), inComponent: i, animated: true)
         }
     }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -107,16 +91,11 @@ class ViewController: UIViewController {
                        animations   : { self.buttonSpin.alpha = 1 },
                        completion   : nil)
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
     
     @IBAction func spin(_ sender: AnyObject) {
-        winSound.player.pause()
-        rattle.player.play()
+        winSound.pause()
+        rattle.play()
         spinSlots()
         checkWinOrLose()
         animateButton()
@@ -128,9 +107,10 @@ class ViewController: UIViewController {
         let emoji1 = pickerView.selectedRow(inComponent: 1)
         let emoji2 = pickerView.selectedRow(inComponent: 2)
 
-        if (dataArray[0][emoji0] == dataArray[1][emoji1] && dataArray[1][emoji1] == dataArray[2][emoji2]) {
+        if (dataArray[0][emoji0] == dataArray[1][emoji1]
+         && dataArray[1][emoji1] == dataArray[2][emoji2]) {
             labelResult.text = K.win
-            winSound.player.play()
+            winSound.play()
         } else {
             labelResult.text = K.lose
         }
@@ -139,7 +119,7 @@ class ViewController: UIViewController {
     
     func animateButton(){
         // animate button
-        let shrinkSize = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.size.width - 20, height: self.bounds.size.height)
+        let shrinkSize = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: bounds.size.width - 15, height: bounds.size.height)
         
         UIView.animate(withDuration: 0.5,
                        delay: 0.0,

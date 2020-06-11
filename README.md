@@ -11,7 +11,7 @@ Slot Machine that uses emojis.
 <img src="GitHub-Images/Winner.png" width="300">
 
 **Technical Info:** \
-Xcode 11 project written in Swift 5 for iOS\
+Xcode 11 project written in Swift 5 for iOS
 
 **Installations:**
 1. Open project in Xcode
