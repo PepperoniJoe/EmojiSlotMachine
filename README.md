@@ -1,7 +1,7 @@
 # EmojiSlotMachine
 Slot Machine that uses emojis.
 
-<img src="GitHub-Images/3InARow.png" width="300">
+<img src="GitHub-Images/EmojiSlotMachine.gif" width="300">
 
 **Features:** 
 - Win with 3 emojis in a row.
@@ -10,13 +10,11 @@ Slot Machine that uses emojis.
 *Winner* \
 <img src="GitHub-Images/Winner.png" width="300">
 
+**Inspired By:** \
+[Allen Wong's Emoji Slot Machine ](https://github.com/allenwong/30DaysofSwift/blob/master/Project%2014%20-%20EmojiSlotMachine/emoji%20spin.gif) \
+
 **Technical Info:** \
 Xcode 11 project written in Swift 5 for iOS
-
-**Installations:**
-1. Open project in Xcode
-2. Go to project settings for the target and update the your signing information(signing and capabilities)
-3. Build and run the app in Xcode. 
 
 **Author:** \
 Marcy Vernon [@MarcyVernon](https://twitter.com/MarcyVernon)

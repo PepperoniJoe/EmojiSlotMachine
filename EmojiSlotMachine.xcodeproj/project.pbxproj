@@ -20,6 +20,7 @@
 		933A7A082483193C0023AE84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A7A072483193C0023AE84 /* Constants.swift */; };
 		933A7A1124835BC70023AE84 /* Slots.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 933A7A1024835BB90023AE84 /* Slots.m4a */; };
 		933A7A13248360F50023AE84 /* Rattle.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 933A7A12248360F30023AE84 /* Rattle.m4a */; };
+		9395DD242495DD7700504BA2 /* EmojiSlotMachine.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9395DD232495DD7700504BA2 /* EmojiSlotMachine.gif */; };
 		93F113DE2492C19400435732 /* 3InARow.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F113DD2492C19400435732 /* 3InARow.png */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		933A7A072483193C0023AE84 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		933A7A1024835BB90023AE84 /* Slots.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slots.m4a; sourceTree = "<group>"; };
 		933A7A12248360F30023AE84 /* Rattle.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rattle.m4a; sourceTree = "<group>"; };
+		9395DD232495DD7700504BA2 /* EmojiSlotMachine.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EmojiSlotMachine.gif; sourceTree = "<group>"; };
 		93F113DD2492C19400435732 /* 3InARow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3InARow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				93F113DD2492C19400435732 /* 3InARow.png */,
+				9395DD232495DD7700504BA2 /* EmojiSlotMachine.gif */,
 				932382D42491CCFF00A4F43B /* Winner.png */,
 			);
 			path = "GitHub-Images";
@@ -204,6 +207,7 @@
 				93F113DE2492C19400435732 /* 3InARow.png in Resources */,
 				933A7A1124835BC70023AE84 /* Slots.m4a in Resources */,
 				933A7A13248360F50023AE84 /* Rattle.m4a in Resources */,
+				9395DD242495DD7700504BA2 /* EmojiSlotMachine.gif in Resources */,
 				93233E9D2482019C00EE7C60 /* Main.storyboard in Resources */,
 				932382D52491CCFF00A4F43B /* Winner.png in Resources */,
 			);
