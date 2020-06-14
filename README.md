@@ -7,7 +7,7 @@ Slot Machine that uses emojis.
 - Win with 3 emojis in a row.
 - Includes sound effects.
 
-*Winner* \
+*Screenshot (in Dark mode)* \
 <img src="GitHub-Images/Winner.png" width="300">
 
 **Inspired By:** \
