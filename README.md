@@ -1,4 +1,8 @@
 # EmojiSlotMachine
+[![Xcode version](https://img.shields.io/badge/xcode-11%20-brightgreen)](https://developer.apple.com/xcode/)
+[![Language](https://img.shields.io/badge/swift-5.0-orange.svg)](https://developer.apple.com/swift)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
+
 Slot Machine that uses emojis.
 
 <img src="GitHub-Images/EmojiSlotMachine.gif" width="300">
