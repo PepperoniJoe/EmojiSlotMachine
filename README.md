@@ -20,6 +20,11 @@ Slot Machine that uses emojis.
 **Technical Info:** \
 Xcode 11 project written in Swift 5 for iOS
 
+**See Also:** \
+[Quickies - a variety of example iOS apps](https://github.com/PepperoniJoe/Quickies)\
+ [Make Icons Swiftly - used to generate app icon sets
+ ](https://github.com/PepperoniJoe/Make-Icons-Swiftly)
+
 **Author:** \
 Marcy Vernon [@MarcyVernon](https://twitter.com/MarcyVernon)
 

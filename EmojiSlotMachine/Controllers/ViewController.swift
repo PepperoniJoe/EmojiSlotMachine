@@ -169,7 +169,7 @@ extension ViewController: UIPickerViewDataSource {
             default : print("done")
         }
         
-        pickerLabel.font = UIFont(name: K.emojiFont, size: 75)
+        pickerLabel.font          = UIFont(name : K.emojiFont, size : 75)
         pickerLabel.textAlignment = NSTextAlignment.center
         return pickerLabel
     }
