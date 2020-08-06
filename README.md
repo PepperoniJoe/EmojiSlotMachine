@@ -18,7 +18,9 @@ Slot Machine that uses emojis.
 [Allen Wong's Emoji Slot Machine ](https://github.com/allenwong/30DaysofSwift/blob/master/Project%2014%20-%20EmojiSlotMachine/emoji%20spin.gif) \
 
 **Technical Info:** \
-Xcode 11 project written in Swift 5 for iOS
+Xcode 11 project written in Swift 5 for iOS\
+pickerview, randomization, AVAudioPlayer, cornerRadius\
+traitCollectionDidChange, userInterfaceStyle, UIView.animate
 
 **See Also:** \
 [Quickies - a variety of example iOS apps](https://github.com/PepperoniJoe/Quickies)\
